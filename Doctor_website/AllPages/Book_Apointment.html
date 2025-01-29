@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment Booking</title>
+    <link rel="stylesheet" href="form.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="booking-container" data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="1800" data-aos-offset="400">
+      
+        <form id="booking-form" style="margin-top:5px;">
+
+            <h3 id="booking-title">Doctor Appointment Form</h3>
+
+            <div id="form-group-name" class="form-group">
+                <label for="patient-name">Patient Name</label><br>
+                <input type="text" id="patient-name" name="patient-name"
+                    placeholder="Enter your name" required="true">
+            </div>
+
+            <div id="form-group-email" class="form-group">
+                <label for="number">Age</label><br>
+                <input type="number" id="age" name="email" placeholder="Enter your age:" required="true">
+            </div>
+
+            <div id="form-group-email" class="form-group">
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required="true">
+            </div>
+
+            <div id="form-group-phone" class="form-group">
+                <label for="phone">Phone Number</label><br>
+                <input type="number" id="phone" name="phone" placeholder="Enter your phone number"
+                    required="true">
+            </div>
+
+            <div id="form-group-date" class="form-group">
+                <label for="appointment-date">Appointment Date</label><br>
+                <input type="date" id="appointment-date" name="appointment-date" required="true">
+            </div>
+
+            <div id="form-group-time" class="form-group">
+                <label for="appointment-time">Appointment Time</label><br>
+                <input type="time" id="appointment-time" name="appointment-time" required="true">
+            </div>
+
+            <div id="form-group-department" class="form-group">
+                <label for="department">Department</label><br>
+                <select id="department" name="department" required =true>
+                    <option value="">Select Department</option>
+                    <option value="general">General Medicine</option>
+                    <option value="pediatrics">Pediatrics</option>
+                    <option value="orthopedics">Orthopedics</option>
+                    <option value="cardiology">Cardiology</option>
+                </select>
+            </div>
+
+            <!-- <div id="form-group-message" class="form-group">
+                <label for="message">Additional Information:</label>
+                <textarea id="message" name="message"
+                    placeholder="Enter any additional information"></textarea>
+            </div> -->
+
+            <input type="button" value="Book Appointment" id="submit-button"
+                onclick="return insertData()">
+        </form>
+    </div>
+
+    <script src="Book_Apointment.html"></script>
+    <script src="Cards.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

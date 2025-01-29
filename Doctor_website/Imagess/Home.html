@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Image/download.png">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- main page style link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Link of Text And Image Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title id="he">Home Page</title>
+
+</head>
+
+<body>
+    <!-- Nav of Medical Care -->
+    <nav>
+        <div id="Logo">
+            <img src="/Imagess/Logo.png" class="image" data-aos="flip-left"
+                data-aos-duration="2000">
+            <!-- <p id="manu" onclick="DisplayList()" data-aos="fade-down">🏥</p> -->
+            <i class="fa-solid fa-bars" id="manue" onclick="DisplayManu()"></i>
+        </div>
+        <div id="MoreContaines">
+            <ul class="ul" data-aos="fade-down">
+                <li class="list" data-aos="fade-down" data-aos-duration="100"><a
+                        href="/Pages/Home.html">Home</a>
+                </li>
+                <li class="list" data-aos="fade-down" data-aos-duration="500"><a
+                        href="specificity.html">Our
+                        speciality</a></li>
+                <li class="list" data-aos="fade-down" data-aos-duration="900"><a href="">surgery</a>
+                </li>
+                <li class="list" data-aos="fade-down" data-aos-duration="1300"><a
+                        href="/AllPages/Book_Apointment.html">Book
+                        Appointment</a></li>
+                <li class="list" data-aos="fade-down" data-aos-duration="1700"><a
+                        href="OrderMedicalCare.html">Order
+                        Medical Care</a></li>
+                <li class="list" data-aos="fade-down" data-aos-duration="2400"><a href="">Vidio
+                        Confrensing</a></li>
+                <li class="list" data-aos="fade-down" data-aos-duration="3000"><a href="">
+                        Feedback</a></li>
+            </ul>
+        </div>
+
+        <div id="userDetails" data-aos="fade-left" data-aos-duration="2000">
+            <div class="logoDivuser">
+                <i class="fa-solid fa-ellipsis-vertical" onclick="toggleLogout()"></i>
+                <p id="logout" onclick="ClosePage()">logout</p>
+            </div>
+        </div>
+    </nav>
+    <!-- ++++++++++++++++++ -->
+
+
+    <!-- Type script ke liye hai welcome code  -->
+    <div id="type_mainDiv">
+        <div id="typeddiv">
+            <h1 id="wel">Welocome to -<h2 id="Write"></h2>
+            </h1>
+        </div>
+    </div>
+    <!-- +++++++++++++++++++++++++++++++++++++ -->
+
+
+
+
+    <!-- Swiper Section of Body -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="/Imagess/p1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="/Imagess/p01.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="/Imagess/p02.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="/Imagess/p03.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="/Imagess/p04.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="/Imagess/p6.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="/Imagess/p7.jpg" alt=""></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- ++++++++++++++++++ -->
+
+
+
+    <!-- Main Hero Section -->
+    <div class="container">
+        <div class="grid">
+            <div class="card" data-aos="fade-right" data-aos-delay="400" data-aos-offset="350">
+                <img src="/Imagess/d1.png" alt="Dr. Sidharth Patel">
+                <div class="card-content">
+                    <h3>Dr. Sidharth Patel</h3>
+                    <p>Specialist in Diagnostics & Pathology with 15 years of experience.</p>
+                    <a href="#">View Profile</a>
+                    <p class="qualification">MD (Pathology), AIIMS Delhi</p>
+                </div>
+            </div>
+
+            <div class="card" data-aos="fade-down-right" data-aos-delay="400" data-aos-offset="350">
+                <img src="/Imagess/D2.png" alt="Dr. Namita Gupta">
+                <div class="card-content">
+                    <h3>Dr. Namita Gupta</h3>
+                    <p>Renowned Cardiologist ensuring a healthy heart for all.</p>
+                    <a href="#">View Profile</a>
+                    <p class="qualification">DM (Cardiology), PGIMER Chandigarh</p>
+                </div>
+            </div>
+
+            <div class="card" data-aos="fade-down-left" data-aos-delay="400" data-aos-offset="350">
+                <img src="/Imagess/D3.png" alt="Dr. Sadhna Yadav">
+                <div class="card-content">
+                    <h3>Dr. Sadhna Yadav</h3>
+                    <p>Expert in Pediatric Medicine, bringing care to young lives.</p>
+                    <a href="#">View Profile</a>
+                    <p class="qualification">MD (Pediatrics), KGMU Lucknow</p>
+                </div>
+            </div>
+
+            <div class="card" data-aos="fade-left" data-aos-delay="400" data-aos-offset="350">
+                <img src="/Imagess/D4.png" alt="Dr. Riya Pandey">
+                <div class="card-content">
+                    <h3>Dr. Riya Pandey</h3>
+                    <p>Surgeon with a commitment to precision and care.</p>
+                    <a href="#">View Profile</a>
+                    <p class="qualification">MS (General Surgery), CMC Vellore</p>
+                </div>
+            </div>
+
+            <div class="card" data-aos="fade-right" data-aos-delay="400" data-aos-offset="350">
+                <img src="/Imagess/D9.png" alt="Dr. Sidharth Patel">
+                <div class="card-content">
+                    <h3>Dr. Sidharth Patel</h3>
+                    <p>Specialist in Diagnostics & Pathology with 15 years of experience.</p>
+                    <a href="#">View Profile</a>
+                    <p class="qualification">MD (Pathology), AIIMS Delhi</p>
+                </div>
+            </div>
+
+            <div class="card" data-aos="fade-down-left" data-aos-delay="400" data-aos-offset="350">
+                <img src="/Imagess/D8.png" alt="Dr. Sadhna Yadav">
+                <div class="card-content">
+                    <h3>Dr. Sadhna Yadav</h3>
+                    <p>Expert in Pediatric Medicine, bringing care to young lives.</p>
+                    <a href="#">View Profile</a>
+                    <p class="qualification">MD (Pediatrics), KGMU Lucknow</p>
+                </div>
+            </div>
+
+            <div class="card" data-aos="fade-left" data-aos-delay="400" data-aos-offset="350">
+                <img src="/Imagess/D9.png" alt="Dr. Riya Pandey">
+                <div class="card-content">
+                    <h3>Dr. Riya Pandey</h3>
+                    <p>Surgeon with a commitment to precision and care.</p>
+                    <a href="#">View Profile</a>
+                    <p class="qualification">MS (General Surgery), CMC Vellore</p>
+                </div>
+            </div>
+
+            <div class="card" data-aos="fade-up-right" data-aos-delay="400" data-aos-offset="350">
+                <img src="/Imagess/D5.png" alt="Dr. Aman Verma">
+                <div class="card-content">
+                    <h3>Dr. Aman Verma</h3>
+                    <p>Leading Dermatologist for healthy skin and hair.</p>
+                    <a href="#">View Profile</a>
+                    <p class="qualification">MD (Dermatology), Maulana Azad Medical College</p>
+                </div>
+            </div>
+
+            <div class="card" data-aos="fade-up" data-aos-delay="400" data-aos-offset="350">
+                <img src="/Imagess/D6.png" alt="Dr. Priya Sharma">
+                <div class="card-content">
+                    <h3>Dr. Priya Sharma</h3>
+                    <p>Gynecologist and Obstetrician specializing in women's health.</p>
+                    <a href="#">View Profile</a>
+                    <p class="qualification">MD (Gynecology), JIPMER</p>
+                </div>
+            </div>
+
+            <div class="card" data-aos="fade-up-left" data-aos-delay="400" data-aos-offset="350">
+                <img src="/Imagess/D7.png" alt="Dr. Rohit Malhotra">
+                <div class="card-content">
+                    <h3>Dr. Rohit Malhotra</h3>
+                    <p>Orthopedic surgeon providing advanced bone and joint care.</p>
+                    <a href="#">View Profile</a>
+                    <p class="qualification">MS (Orthopedics), AIIMS Delhi</p>
+                </div>
+            </div>
+
+            <div class="card" data-aos="fade-up-right" data-aos-delay="400" data-aos-offset="350">
+                <img src="/Imagess/D8.png" alt="Dr. Anjali Mishra">
+                <div class="card-content">
+                    <h3>Dr. Anjali Mishra</h3>
+                    <p>Psychiatrist offering compassionate mental health care.</p>
+                    <a href="#">View Profile</a>
+                    <p class="qualification">MD (Psychiatry), NIMHANS</p>
+                </div>
+            </div>
+
+            <div class="card" data-aos="fade-left" data-aos-delay="400" data-aos-offset="350">
+                <img src="/Imagess/D12.png" alt="Dr. Riya Pandey">
+                <div class="card-content">
+                    <h3>Dr. Riya Pandey</h3>
+                    <p>Surgeon with a commitment to precision and care.</p>
+                    <a href="#">View Profile</a>
+                    <p class="qualification">MS (General Surgery), CMC Vellore</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- ++++++++++++++++++ -->
+
+
+    <!-- Poster Ki Image Hai -->
+    <div class="posterDiv">
+        <img src="/Imagess/banner.png" alt="" data-aos="fade-down-right" data-aos-delay="500"
+            data-aos-offset="350">
+    </div>
+    <hr>
+    <!-- ++++++++++++++++++ -->
+
+
+    <!-- Footer Ke Liye Html -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="section">
+                <h4 data-aos="fade-down">About Us</h4>
+                <ul>
+                    <li data-aos="fade-right"><a href="#">Our Mission</a></li>
+                    <li data-aos="fade-right"><a href="#">Leadership</a></li>
+                    <li data-aos="fade-right"><a href="#">Careers</a></li>
+                    <li data-aos="fade-right"><a href="#">Our Mission</a></li>
+                    <li data-aos="fade-right"><a href="#">Leadership</a></li>
+                    <li data-aos="fade-right"><a href="#">Careers</a></li>
+                    <li data-aos="fade-right"><a href="#">Our Mission</a></li>
+                    <li data-aos="fade-right"><a href="#">Leadership</a></li>
+                    <li data-aos="fade-right"><a href="#">Careers</a></li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h4 data-aos="fade-down">Services</h4>
+                <ul>
+                    <li data-aos="flip-left"><a href="#">Emergency Care</a></li>
+                    <li data-aos="flip-left"><a href="#">Outpatient Services</a></li>
+                    <li data-aos="flip-left"><a href="#">Specialty Clinics</a></li>
+                    <li data-aos="flip-left"><a href="#">Emergency Care</a></li>
+                    <li data-aos="flip-left"><a href="#">Outpatient Services</a></li>
+                    <li data-aos="flip-left"><a href="#">Specialty Clinics</a></li>
+                    <li data-aos="flip-left"><a href="#">Emergency Care</a></li>
+                    <li data-aos="flip-left"><a href="#">Outpatient Services</a></li>
+                    <li data-aos="flip-left"><a href="#">Specialty Clinics</a></li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h4 data-aos="fade-down">Contact Us</h4>
+                <ul>
+                    <li data-aos="fade-left"><a href="tel:+1234567890">+1 234 567 890</a></li>
+                    <li data-aos="fade-left"><a
+                            href="mailto:info@hospital.com">info@hospital.com</a></li>
+                    <li data-aos="fade-left"><a href="#">Location & Directions</a></li>
+                    <li data-aos="fade-left"><a href="tel:+1234567890">+1 234 567 890</a></li>
+                    <li data-aos="fade-left"><a
+                            href="mailto:info@hospital.com">info@hospital.com</a></li>
+                    <li data-aos="fade-left"><a href="#">Location & Directions</a></li>
+                    <li data-aos="fade-left"><a href="tel:+1234567890">+1 234 567 890</a></li>
+                    <li data-aos="fade-left"><a
+                            href="mailto:info@hospital.com">info@hospital.com</a></li>
+                    <li data-aos="fade-left"><a href="#">Location & Directions</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="social-icons">
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+            <a href="#" aria-label="Snapchat"><i class="fab fa-snapchat"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+
+
+        <div class="copyright">
+            &copy; 2025 Hospital Name. All Rights Reserved.
+        </div>
+    </footer>
+    <!-- +++++++++++++++++++ -->
+
+
+
+    <!--+++++++++++++++++++ Initialize Swiper JS Code Hare ++++++++++++++++++++++++-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+
+    <!-- +++++++++++++++++ Script Link of Test And Image Animation ++++++++++++++++ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+
+    <!-- ++++++++++++++++++++++ MAIN JAVSCRIPT CODE +++++++++++++++++++++++++++++++ -->
+    <script src="script.js"> </script>
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+
+
+    <!-- +++++++++++++++++++++   TYPE Script Ke Liye Hai ++++++++++++++++++++++++++ -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#Write', {
+            strings: [
+                "Compassionate Healthcare Solutions",
+                "Where Every Patient Matters",
+                "Over a Decade of Trusted Care",
+                "Innovating for Better Lives",
+                "Healing Beyond Medicine"
+            ],
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: true,
+        });
+    </script>
+
+
+    <!-- ++++++++++++++++++   Home.js Ki Script Ki File +++++++++++++++++ -->
+    <script src="Home.js"></script>
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+</body>
+
+</html>
