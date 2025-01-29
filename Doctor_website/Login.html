@@ -8,42 +8,44 @@
     <title> Responsive Login and Signup Form </title>
     <link rel="stylesheet" href="/login.css">
     <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-    <section class="container forms">
+    <section class="container forms" >
         <div class="form login">
             <div class="form-content">
                 <header>Login</header>
                 <form action="#">
-                    <div class="field input-field">
+                    <div class="field input-field"  data-aos="fade-right" data-aos-duration="700">
                         <input type="email" placeholder="Email" class="input" id="email">
                     </div>
-                    <div class="field input-field">
+                    <div class="field input-field"  data-aos="fade-right" data-aos-duration="900">
                         <input type="password" placeholder="Password" class="password" id="password">
                     </div>
-                    <div class="form-link">
+                    <div class="form-link"  data-aos="fade-right" data-aos-duration="1100">
                         <a href="#" class="forgot-pass">Forgot password?</a>
                     </div>
 
-                    <div class="field button-field">
+                    <div class="field button-field"  data-aos="fade-right" data-aos-duration="1300">
                         <button type="submit" onclick="return LoginAllData()">Login</button>
                     </div>
                 </form>
-                <div class="form-link">
+                <div class="form-link"  data-aos="fade-right" data-aos-duration="1500">
                     <span>Don't have an account? <a href="/index.html" class="link signup-link">Signup</a></span>
                 </div>
             </div>
             <div class="line"></div>
-            <div class="media-options">
+            <div class="media-options"  data-aos="fade-right" data-aos-duration="1700">
                 <a href="#" class="field facebook">
                     <i class='bx bxl-facebook facebook-icon'></i>
                     <span>Login with Facebook</span>
                 </a>
             </div>
-            <div class="media-options">
+            <div class="media-options" >
                 <a href="#" class="field google">
+                    
                     <img src="/Google__G__logo.svg" alt="" class="google-img">
                     <span>Login with Google</span>
                 </a>
@@ -88,6 +90,10 @@
         </div>
     </section> -->
         <!-- JavaScript -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
         <script src="scriptLogin.js"></script>
 
 </body>

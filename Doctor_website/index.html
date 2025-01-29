@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/login.css">
     <link rel="stylesheet" href="/signup.css">
     <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
@@ -20,47 +21,47 @@
                 <header>Signup</header>
                 <form action="#">
 
-                    <div class="field input-field">
+                    <div class="field input-field" data-aos="fade-right" data-aos-duration="700">
                         <input type="text" placeholder="Full Name" class="input" id="fullname">
                     </div>
 
-                    <div class="field input-field">
+                    <div class="field input-field" data-aos="fade-right" data-aos-duration="900">
                         <input type="email" placeholder="Email" class="input" id="email">
                     </div>
 
-                    <div class="field input-field">
+                    <div class="field input-field" data-aos="fade-right" data-aos-duration="1100">
                         <input type="text" placeholder="Enter location" class="input" id="location">
                     </div>
 
-                    <div class="field input-field">
+                    <div class="field input-field" data-aos="fade-right" data-aos-duration="1300">
                         <input type="text" placeholder="Mobile Number" class="input" id="phone">
                     </div>
 
-                    <div class="field input-field">
+                    <div class="field input-field" data-aos="fade-right" data-aos-duration="1500">
                         <input type="password" placeholder="Password" class="password" id="password">
                     </div>
 
-                    <div class="field input-field">
+                    <div class="field input-field" data-aos="fade-right" data-aos-duration="1700">
                         <input type="password" placeholder="Confirm Password" class="password" id="confirmPassword">
                     </div>
 
-                    <div class="form-link">
+                    <div class="form-link" data-aos="fade-right" data-aos-duration="1900">
                         <a href="#" class="forgot-pass">Forgot password?</a>
                     </div>
 
-                    <div class="field button-field">
+                    <div class="field button-field" data-aos="fade-right" data-aos-duration="2100" data-aos-offset="0">
                         <a href="/Login.html"><button onclick="return SubmitAllData()">Signup</button></a>
                         
                     </div>
 
                 </form>
-                <div class="form-link">
+                <div class="form-link" data-aos="fade-right" data-aos-duration="2300" data-aos-offset="0">
                     <span>Already have an account? <a href="/Login.html" class="link login-link">Login</a></span>
                 </div>
               
             </div>
             <div class="line"></div>
-            <div class="media-options">
+            <div class="media-options" data-aos="fade-right" data-aos-duration="2500">
                 <a href="#" class="field facebook">
                     <i class='bx bxl-facebook facebook-icon'></i>
                     <span>Login with Facebook</span>
@@ -112,6 +113,10 @@
         </div>
     </section> -->
         <!-- JavaScript -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
         <script src="scriptSingup.js"></script>
 
 </body>
