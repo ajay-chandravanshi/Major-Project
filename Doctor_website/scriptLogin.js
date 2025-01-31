@@ -15,24 +15,24 @@ const LoginAllData = (event) => {
     console.log("Entered Email:", signemailValue);
     console.log("Entered Password:", signpassValue);
 
-    if (!mail || !pass) {
-        alert("No account found. Please sign up first.");
-        return false;
-    }
+    // if (!mail || !pass) {
+    //     alert("No account found. Please sign up first.");
+    //     return false;
+    // }
 
-    if (mail != signemailValue) {
-        signemail.style.border = "2px solid red";
-        alert("Email does not match!");
-        return false;
-    } else {
-        signemail.style.border = "2px solid green";
-    }
+    // if (mail != signemailValue) {
+    //     signemail.style.border = "2px solid red";
+    //     alert("Email does not match!");
+    //     return false;
+    // } else {
+    //     signemail.style.border = "2px solid green";
+    // }
 
-    if (pass !== signpassValue) {
-        signpass.style.border = "2px solid red";
-        alert("Password does not match!");
-        return false;
-    }
+    // if (pass !== signpassValue) {
+    //     signpass.style.border = "2px solid red";
+    //     alert("Password does not match!");
+    //     return false;
+    // }
 
     alert("Login Successful!");
     console.log("Redirecting to Home.html...");
